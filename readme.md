@@ -1,6 +1,6 @@
 Klasörde bulunan veya bilgisayarınızda bulunan diğer resimleri okumak için kodun 13 ve 14. satırlarındaki aşağıdaki kısıma gidip ilgili işlemi uygulayabilirsiniz. 
 
-# OKUNACAK RESIM ICIN " " ICINE KLASORDEN PATH YAPISTIRINIZ.
+"# OKUNACAK RESIM ICIN " " ICINE KLASORDEN PATH YAPISTIRINIZ."
 img = cv.imread(" ")
 
  PATH'i kopyalamak için resme sağ tıklayıp "Yol Olarak Kopyala" seçeneğine tıkladıktan sonra ilgili yere yapıştırabilirsiniz.
