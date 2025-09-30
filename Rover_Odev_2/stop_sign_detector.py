@@ -11,7 +11,7 @@ def show_images(images: list):
         cv.destroyWindow(f'Image {i+1}')
 
 # OKUNACAK RESIM ICIN " " ICINE KLASORDEN PATH YAPISTIRINIZ.
-img = cv.imread("C:/Users/berko/Desktop/Rover_Odev1/stop_sign_dataset/3.jpg")
+img = cv.imread("C:/Users/berko/Desktop/ROVER_ODEVLER/Rover_Odev_2/stop_sign_dataset/2.jpg")
 
 downscale = cv.resize(img, (img.shape[1]//2, img.shape[0]//2), cv.INTER_AREA)
 
@@ -26,7 +26,7 @@ mask = cv.bitwise_or(mask1, mask2)
 images = [downscale, hsv, h, s, v, mask]
 
 # Ara basamaklarin ciktilarini goruntulemek icin bir alt satirdaki comment kaldirilarak kod calistirilabilir: 
-# show_images(images) 
+show_images(images) 
 
 contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
